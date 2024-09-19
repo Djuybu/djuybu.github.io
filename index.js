@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText);
             const response = JSON.parse(xhr.responseText);
             for (const element in response) {
                 if (Object.prototype.hasOwnProperty.call(response, element)) {
