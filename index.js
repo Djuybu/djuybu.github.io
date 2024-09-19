@@ -3,11 +3,6 @@ const table = document.getElementById("table").querySelector("table");
 
 const xhr = new XMLHttpRequest();
 
-// autoplay video on finished loading web
-document.addEventListener("DOMContentLoaded", () => {
-    video.play();
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     xhr.open("GET", "index.php");
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
